@@ -33,3 +33,8 @@ a static type checker by Facebook.
 ### Jest
 + Run `yarn add -D jest babel-jest`
 + Add `"env": { "jest": true }` to `.eslintrc.json` file
+
+### Husky
+set up Git Hooks to automatically run the task before every `git commit` and `git push`.
++ Run `yarn add -D husky`
++ Add scripts to `package.json`
