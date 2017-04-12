@@ -46,3 +46,11 @@ set up Git Hooks to automatically run the task before every `git commit` and `gi
 + add `config.js` file to define `WEB_PROT`, `STATIC_PATH` and `APP_NAME` constants
 + change `yarn start` script from `package.json`
 + use `Nodemon` to automatically restart Node server when file changes happen in the directory by using script `nodemon --ignore lib --exec babel-node src/server`
+
+### PM2
+It keeps your process alive in **production**, and offer tons of features to manage them
++ Run `yarn add -D pm2`
++ clean up the `lib` folder before a new build by using `rimraf`, Run `yarn add -D rimraf` and add new script `rimraf lib && babel src -d lib --ignore .test.js`
++ use `prod:start` to run app, stop by `prod:stop`
+We are going to pass a `NODE_ENV` environment variable to PM2, With Unix, you would do this by running `NODE_ENV=production pm2`, but Windows uses a different syntax.
++ Run `yarn add -D cross-env` to make the syntax work on Windows
