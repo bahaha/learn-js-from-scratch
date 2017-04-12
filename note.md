@@ -38,3 +38,10 @@ a static type checker by Facebook.
 set up Git Hooks to automatically run the task before every `git commit` and `git push`.
 + Run `yarn add -D husky`
 + Add scripts to `package.json`
+
+### Express
++ set up `isProd` in `util.js` with `eslint-disable-next-line import/prefer-default-export`
++ Run `yarn add express compression`
++ `compression` is an Express middleware to activate **`Gzip`** compression on the server
++ add `config.js` file to define `WEB_PROT`, `STATIC_PATH` and `APP_NAME` constants
++ change `yarn start` script from `package.json`
