@@ -29,3 +29,7 @@ a static type checker by Facebook.
 + update `.babelrc`, add `flow` to presets
 + udpate `.eslintrc.json`
 + add flow config file `.flowconfig` to ignore any warning detected on the next line by setting up `suppress_comment`, so it could use like `something.flow(doesnt.like).for.instance()`
+
+### Jest
++ Run `yarn add -D jest babel-jest`
++ Add `"env": { "jest": true }` to `.eslintrc.json` file
