@@ -1,4 +1,4 @@
-const Dog = require('./Dog')
+import Dog from './Dog'
 
 const money = new Dog('Money')
 
