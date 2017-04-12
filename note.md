@@ -45,3 +45,4 @@ set up Git Hooks to automatically run the task before every `git commit` and `gi
 + `compression` is an Express middleware to activate **`Gzip`** compression on the server
 + add `config.js` file to define `WEB_PROT`, `STATIC_PATH` and `APP_NAME` constants
 + change `yarn start` script from `package.json`
++ use `Nodemon` to automatically restart Node server when file changes happen in the directory by using script `nodemon --ignore lib --exec babel-node src/server`
