@@ -16,3 +16,16 @@ It would add `eslint-config-airbnb`, `eslint-plugin-import`, `eslint-plugin-jsx-
 	}
 }
 ```
+
+### Compat
+a ESLint plugin that warns you if you use some JavaScript APIs that are not available in the browsers you need to support.
++ Run `yarn add -D eslint-plugin-compat`
++ set up `package.json` with `browserslist: ["> 1%"]`
++ edit `.eslintrc.json`
+
+### Flow
+a static type checker by Facebook.
++ Run `yarn add -D flow-bin babel-preset-flow babel-eslint eslint-plugin-flowtype`
++ update `.babelrc`, add `flow` to presets
++ udpate `.eslintrc.json`
++ add flow config file `.flowconfig` to ignore any warning detected on the next line by setting up `suppress_comment`, so it could use like `something.flow(doesnt.like).for.instance()`
