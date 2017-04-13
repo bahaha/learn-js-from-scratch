@@ -16,7 +16,9 @@ It would add `eslint-config-airbnb`, `eslint-plugin-import`, `eslint-plugin-jsx-
 	}
 }
 ```
-
+### React Hot Module Replacement
++ Run `yarn add react-hot-loader@next`
++ Update `webpack.config.babel.js`
 ### Compat
 a ESLint plugin that warns you if you use some JavaScript APIs that are not available in the browsers you need to support.
 + Run `yarn add -D eslint-plugin-compat`
