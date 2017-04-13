@@ -54,3 +54,12 @@ It keeps your process alive in **production**, and offer tons of features to man
 + use `prod:start` to run app, stop by `prod:stop`
 We are going to pass a `NODE_ENV` environment variable to PM2, With Unix, you would do this by running `NODE_ENV=production pm2`, but Windows uses a different syntax.
 + Run `yarn add -D cross-env` to make the syntax work on Windows
+
+### Webpack
++ add `babel-polyfill` to dependency to use some of the most recent ES features in clinet code
++ add `webpack.config.babel.js` to bundle this ES6 client app into an ES5 bundle.
++ `.babel.js` to apply babel transformations to this config file.
++ Run `yarn add -D webpack webpack-dev-server babel-core babel-loader`
++ We will use `webpack-dev-server` to do **`Hot Module Reloading`** when develop, and in production, we will simply use `webpack` to generate bundle.
++ use `--progress` flag to display additional information when Webpack compiling
++ use `-p` flag to minify our code and set the `NODE_ENV` to `production`
