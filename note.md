@@ -79,3 +79,4 @@ A library to easily deal with `Websockets`
 ### CSS, Styles
 + React inline style could NOT use some native CSS like `:hover`, `Media Query`, `animation`, `font-face`. To use that, give `Radium` a shot.
 + React inline styles are a great way to isolate your component's styles from the global CSS namespace
++ use `react-jss`
