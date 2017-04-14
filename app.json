@@ -1,5 +1,16 @@
 {
+  "name": "learn-js-from-scratch",
+  "scripts": {
+  },
   "env": {
     "NPM_CONFIG_PRODUCTION": "false"
-  }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
 }
