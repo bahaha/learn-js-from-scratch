@@ -4,6 +4,7 @@ import 'babel-polyfill'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { AppContainer } from 'react-hot-loader'
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
@@ -25,9 +26,11 @@ const rootEl = document.querySelector(APP_CONTAINER_SELECTOR)
 
 const wrapApp = (AppComponent, reduxStore) =>
   <Provider store={reduxStore}>
-    <AppContainer>
-      <AppComponent />
-    </AppContainer>
+    <BrowserRouter>
+      <AppContainer>
+        <AppComponent />
+      </AppContainer>
+    </BrowserRouter>
   </Provider>
 
 ReactDOM.render(wrapApp(App, store), rootEl)
