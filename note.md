@@ -69,3 +69,9 @@ We are going to pass a `NODE_ENV` environment variable to PM2, With Unix, you wo
 ### React Helmet
 A library to inject content to the `head` of a React app, on both the client and the server.
 + `const head = Helmet.rewind()`
+
+### Socket.IO
+A library to easily deal with `Websockets`
++ Run `yarn add socket.io socket.io-client`
++ [set up with `Express`](https://socket.io/docs/#using-with-express-3/4)
++ use the server reference of `http.Server(express())` to listen on PORT
