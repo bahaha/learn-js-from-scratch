@@ -1,0 +1,15 @@
+{
+  "name": "learn-js-from-scratch",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
