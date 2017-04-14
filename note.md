@@ -75,3 +75,7 @@ A library to easily deal with `Websockets`
 + Run `yarn add socket.io socket.io-client`
 + [set up with `Express`](https://socket.io/docs/#using-with-express-3/4)
 + use the server reference of `http.Server(express())` to listen on PORT
+
+### CSS, Styles
++ React inline style could NOT use some native CSS like `:hover`, `Media Query`, `animation`, `font-face`. To use that, give `Radium` a shot.
++ React inline styles are a great way to isolate your component's styles from the global CSS namespace
