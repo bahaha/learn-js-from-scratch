@@ -65,3 +65,7 @@ We are going to pass a `NODE_ENV` environment variable to PM2, With Unix, you wo
 + We will use `webpack-dev-server` to do **`Hot Module Reloading`** when develop, and in production, we will simply use `webpack` to generate bundle.
 + use `--progress` flag to display additional information when Webpack compiling
 + use `-p` flag to minify our code and set the `NODE_ENV` to `production`
+
+### React Helmet
+A library to inject content to the `head` of a React app, on both the client and the server.
++ `const head = Helmet.rewind()`
