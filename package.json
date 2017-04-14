@@ -9,6 +9,7 @@
     "dev:wds": "webpack-dev-server --progress",
     "prod:build": "rimraf lib && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
     "prod:start": "heroku local",
+    "heroku-postbuild": "yarn prod:build",
     "lint": "eslint src webpack.config.babel.js --ext .js,.jsx",
     "test": "yarn lint && flow && jest --coverage",
     "precommit": "yarn test",
@@ -68,5 +69,9 @@
   },
   "browserslist": [
     "> 1%"
-  ]
+  ],
+  "engines": {
+    "node": "7.x",
+    "yarn": "0.20.3"
+  }
 }
